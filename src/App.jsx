@@ -5,6 +5,37 @@ import { Sidebar } from "./components/Sidebar"
 import styles from './styles/App.module.css'
 import './styles/global.css'
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: "https://github.com/jemluz.png",
+      name: "Jemima Luz",
+      role: "Software Analist at @Levva"
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀' },
+      { type: 'link', content: '👉 jems.projects/ignilefeed' },
+    ],
+    publishedAt: new Date('2022-12-20')
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: "https://github.com/anotherjemluz.png",
+      name: "Jemima Trevas",
+      role: "Baba ovo da @ Rocketseat"
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      { type: 'paragraph', content: 'Finalmente finalizei meu novo site/portfólio. Foi um baita desafio criar todo o design e codar na unha, mas consegui 💪🏻' },
+      { type: 'link', content: '👉 anotherjems.projects/venha-sacana' },
+    ],
+    publishedAt: new Date('2022-12-26 12:00:00')
+  }
+];
+
 export function App() {
   return (
     <div>
@@ -12,21 +43,18 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Eu mesma"
-            authorInfo="Web Developer"
-            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veniam officiis dignissimos esse iusto corporis fuga nobis quidem error iure cupiditate vero, culpa autem ipsa ratione. Officiis velit similique reprehenderit!"
-          />
-          <Post
-            author="Some else"
-            authorInfo="Web Developer"
-            content="Só mais um post entre milhões na internet"
-          />
-          <Post
-            author="Some daqui"
-            authorInfo="Web Developer"
-            content="Se a filha de tereza é filha da mãe da minha filha, o que eu sou de Tereza?"
-          />
+          {
+            posts.map(
+              post => (
+                <Post
+                  key={post.id}
+                  author={post.author}
+                  content={post.content}
+                  publishedAt={post.publishedAt}
+                />
+              )
+            )
+          }
         </main>
       </div>
     </div>
