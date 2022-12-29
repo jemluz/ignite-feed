@@ -32,7 +32,7 @@ Projeto focado em abordar os fundamentos do ReactJS pela [@rocketseat-education]
   - Component Comment
   - Component Avatar
   
-- [React core #5](https://github.com/jemluz/little-blog/issues/5)
+- ### [React core #5](https://github.com/jemluz/little-blog/issues/5)
   - Iterando no JSX
   - Propriedades do Post
   - Estado (useState)
