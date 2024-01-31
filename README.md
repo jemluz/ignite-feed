@@ -1,4 +1,4 @@
-# little-blog
+# Ignite Feed
  A react starter project by rocketSeat
 
 Projeto focado em abordar os fundamentos do ReactJS pela [@rocketseat-education](https://github.com/rocketseat-education). 
