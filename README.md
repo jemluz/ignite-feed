@@ -1,29 +1,27 @@
 # Ignite Feed
- A react starter project by rocketSeat
-
-Projeto focado em abordar os fundamentos do ReactJS pela [@rocketseat-education](https://github.com/rocketseat-education). 
+1/7 projects of Ignite React specialization by [@rocketseat-education](https://github.com/rocketseat-education) : A react starter project to learn React Fundamentals
 
 ![Capa](https://user-images.githubusercontent.com/23065460/209886667-e165af23-72a2-40df-a4f2-092d7ddeccf9.png)
 
-## Requisitos:
-- Adição de comentários
-- Eclusão da comentários
-- Likes em um comentário
-- Validação de comentário
+## Requirements
+- **Add Comments**: Users should be able to add comments to posts.
+- **Delete Comments**: Users should have the capability to delete comments.
+- **Like Comments**: Users should be able to like or unlike comments.
+- **Comment Validation**: Comments can't be empty.
 
-## Tecnologias e bibliotecas
-- [Vite](https://vitejs.dev/) Frontend env
+## Technologies & Libraries used on this project
+- [Vite](https://vitejs.dev/) Frontend environment
 - [Phosphor](https://phosphoricons.com/) Icons Library
 - [date-fns](https://date-fns.org/) Utility library/date formatting
 
-## Issues com tópicos discutidos ao longo do projeto: 
+## Issues and Discussions
 
 - ### [Setup environment #1](https://github.com/jemluz/little-blog/issues/1)
   - SSRs e SPAs
   - Bundlers & Compilers
-  - A santa trindade
-  - Componentes
-  - Propriedades
+  - The holy trinity / A santa trindade
+  - Components
+  - Proprerties
   - CSS Modules
   - CSS Global
 
@@ -33,18 +31,18 @@ Projeto focado em abordar os fundamentos do ReactJS pela [@rocketseat-education]
   - Component Avatar
   
 - ### [React core #5](https://github.com/jemluz/little-blog/issues/5)
-  - Iterando no JSX
-  - Propriedades do Post
-  - Estado (useState)
-  - Inserindo comentários (programação declarativa)
-  - Entendendo a key
-  - Comunicação entre componentes
-  - Removendo comentários (imutabilidade)
-  - Realizando likes nos comentários
-  - Entendendo closures no React
+  - JSX Iteration
+  - Post Props
+  - useState
+  - Entering comments (declarative programming)
+  - Understanding key
+  - Components communication
+  - Removing comements (immutability)
+  - Liking comments
+  - Understanding React losures
 
 
-## PRs atrelados as issues: 
+## Issue's PRs: 
 - ### [feat: setup environment #2](https://github.com/jemluz/little-blog/pull/2)
 - ### [feat: app structure #4](https://github.com/jemluz/little-blog/pull/4)
 - ### [feat: dance with React core and include interface behaviors #6](https://github.com/jemluz/little-blog/pull/6)
